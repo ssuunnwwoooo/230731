@@ -1,0 +1,151 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.527);
+}
+
+.header.on {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+
+
+    color: #fff;
+}
+
+
+.header_wrap .logo {
+    z-index: 9999;
+}
+
+.header .gnb {
+    position: relative;
+}
+
+.header .gnb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 1920px;
+    height: 380px;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.header .gnb:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 15px;
+    border: 1px solid red;
+}
+
+.gnb>ul>li {
+    position: relative;
+}
+
+
+.gnb>ul>li>a {
+    display: block;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 35px 10px;
+}
+
+.header .sub {
+    position: absolute;
+
+    top: 105px;
+    left: 0;
+
+    width: 100%;
+    height: 0;
+
+    text-align: center;
+
+    line-height: 40px;
+
+    z-index: 999;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .gnb:hover .sub {
+    opacity: 1;
+    visibility: visible;
+    height: 200px;
+}
+
+.header .gnb i {
+    font-size: 25px;
+}
+
+.header .gnb .lang {
+    color: rgba(255, 255, 255, 0.541);
+}
+
+.header .gnb .bars {
+    position: relative;
+}
+
+.header .gnb .bars:hover i {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.header .gnb .bars::before {
+    content: "\f479";
+    position: absolute;
+    top: 35%;
+    left: 28%;
+    font-size: 25px;
+    font-family: bootstrap-icons;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.header .gnb .bars:hover::before {
+    opacity: 1;
+}
+
+/* *****헤더 끝***** */
+
+.main_visual {}
+
+.main_visual .main_slide .img {
+    height: 100vh;
+}
+
+.main_visual .main_slide .img01 {
+    background: url(../images/vg_02_01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .img02 {
+    background: url(../images/vg_01_01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .img03 {
+    background: url(../images/vg_03.jpg) no-repeat center center/cover;
+}
