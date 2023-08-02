@@ -1,4 +1,8 @@
+
 $(function () {
+
+    AOS.init();
+
 
     $(window).on('scroll', function () {
         let sct = $(window).scrollTop();
