@@ -26,16 +26,16 @@ $(function () {
 
     console.log(SLIDE_LIST);
 
-    var main_slide = new Swiper(".main_slide", {
+    const main_slide = new Swiper(".main_slide", {
         loop: true,
         autoplay: {     //자동슬라이드 (false-비활성화)
-            delay: 5000, // 시간 설정
+            delay: 2000, // 시간 설정
         },
         effect: 'fade',
         fadeEffect: {
             crossFade: true
         },
-        speed: 3500,
+        speed: 3000,
 
 
         slideActiveClass: 'on',
@@ -47,6 +47,14 @@ $(function () {
         }
 
     });
+
+    $('.main_visual .arrows .left').on('click', function () {
+        main_slide.slidePrev();
+    });
+    $('.main_visual .arrows .right').on('click', function () {
+        main_slide.slideNext();
+    });
+
 
 
     SLIDE_LIST.forEach((it, idx) => {
