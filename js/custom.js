@@ -67,8 +67,16 @@ $(function () {
             e.preventDefault();
         };
 
-        $(this).next().stop().slideDown();
-        $(this).parent().siblings().find('.sub').stop().slideUp();
+        $(this)
+            .next()
+            .stop()
+            .slideToggle();
+        $(this)
+            .parent()
+            .siblings()
+            .find('.sub')
+            .stop()
+            .slideUp();
 
     });
 
