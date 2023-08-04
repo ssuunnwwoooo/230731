@@ -1329,7 +1329,7 @@ header .gnb:hover .sub {
 
     .about_box .left .ab_data ul {
         /* r */
-        text-align: right;
+        text-align: left;
     }
 
 
