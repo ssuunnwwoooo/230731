@@ -212,20 +212,6 @@ header .gnb:hover .sub {
     overflow: hidden;
 }
 
-.main_visual .arrows {
-    position: absolute;
-    bottom: 2%;
-    right: 18%;
-    z-index: 1;
-}
-
-.main_visual .arrows i {
-    color: #000;
-    font-size: 35px;
-    background: #eeeeee;
-    padding: 20px;
-}
-
 .main_visual .list {
     position: absolute;
     top: 40%;
@@ -1163,13 +1149,6 @@ header .gnb:hover .sub {
     }
 
     /* *****헤더 끝***** */
-    .main_visual .arrows {
-        display: none;
-    }
-
-    .main_visual .arrows i {
-        display: none;
-    }
 
     .main_visual .list {
         /* r */
