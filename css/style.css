@@ -8,6 +8,7 @@
     width: 100%;
     margin: 0 auto 80px auto;
 
+    padding: 0 15px;
     overflow: hidden;
 }
 
@@ -321,7 +322,7 @@ header .gnb:hover .sub {
 .main_company {
     position: relative;
 
-    background: linear-gradient(90deg, rgb(245, 245, 245) 70%, rgba(255, 255, 255, 0) 60%);
+    background: linear-gradient(90deg, #f5f5f5 70%, rgba(255, 255, 255, 0) 60%);
 
     z-index: -2;
 }
@@ -923,7 +924,7 @@ header .gnb:hover .sub {
 .footer_wrap .ft_txt03 span {
     display: block;
     font-size: 13px;
-    color: rgba(200, 200, 200, 0.1);
+    color: #c8c8c81a;
     margin: 0 0 5px 0;
 }
 
